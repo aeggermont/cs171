@@ -1,27 +1,8 @@
 import csv
+import re
 from pattern.web import URL, DOM, plaintext, strip_between
 from pattern.web import NODE, TEXT, COMMENT, ELEMENT, DOCUMENT
 
-
-"""
-print len(dom.by_class("title"))
-print dom.by_class("title")[0].by_tag("a")[0].content
-print dom.by_class("runtime")[0].content
-
-print dom.by_class("value")[0].content
-print dom.by_class("genre")[0].by_tag("a")[0].content
-print dom.by_class("credit")[0].by_tag("a")[0].content
-
-print " --> "
-
-print dom.by_class("title")[1].by_tag("a")[0].content
-print dom.by_class("runtime")[1].content
-
-print dom.by_class("value")[1].content
-print dom.by_class("genre")[1].by_tag("a")[0].content
-print dom.by_class("credit")[1].by_tag("a")[0].content
-
-"""
 
 
 # Globals
@@ -34,8 +15,8 @@ class Title:
     def __init__(self, titleName ):
 
         self.titleName = titleName
-        self.rank    = None
-        self.runTime = None
+        self.rank    = ""
+        self.runTime = ""
         self.genres = []      
         self.actors = []
 
@@ -59,10 +40,11 @@ def process_page():
     domIndex = 0
 
     for title in dom.by_class("title"):
-        #print " -------------> ", domIndex
-        #print title.by_tag("a")[0].content
 
-        titleCatalog.append(Title(title.by_tag("a")[0].content))
+        theTitle = str(title.by_tag("a")[0].content).encode('ascii', 'ignore')
+        #titleCatalog.append(Title(title.by_tag("a")[0].content))
+        titleCatalog.append(Title(theTitle))
+        print theTitle
     
         try:
             # print dom.by_class("runtime")[domIndex].content
@@ -95,14 +77,34 @@ def process_page():
 
 def generate_csv_log():
 
-    for title in titleCatalog:
-        print "-----------------------" 
-        print title.titleName
-        print title.rank
-        if title.runTime is not None: 
+    # Creating the csv output file for writing into as well as defining the writer
+
+    try:
+        output = open("my_output.csv", "wb")
+        writer = csv.writer(output)
+        writer.writerow(["Title", "Ranking", "Genre", "Actors", "Runtime"])
+
+        for title in titleCatalog:
+            print "-----------------------" 
+            print title.titleName
+            print title.rank
             print title.runTime 
-        print "\"%s\"" % (','.join( title.genres ))
-        print "\"%s\"" % (','.join( title.actors ))
+
+            print "\"%s\"" % (','.join( title.genres ))
+            print "\"%s\"" % (','.join( title.actors ))
+
+            writer.writerow([title.titleName, title.rank, "%s" % (','.join( title.genres )) , "%s" % (','.join( title.actors )), title.runTime ])
+
+
+    except IOError as e:
+        print "I/O error({0}): {1}".format(e.errno, e.strerror)
+        raise
+        
+    finally:
+        output.close()
+
+
+
 
 
 if __name__ == "__main__":
