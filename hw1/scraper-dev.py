@@ -41,34 +41,34 @@ def process_page():
 
     for title in dom.by_class("title"):
 
-        theTitle = str(title.by_tag("a")[0].content).encode('ascii', 'ignore')
+        theTitle = str(title.by_tag("a")[0].content).encode('ascii', 'replace')
+        #print theTitle
         #titleCatalog.append(Title(title.by_tag("a")[0].content))
         titleCatalog.append(Title(theTitle))
-        print theTitle
     
         try:
             # print dom.by_class("runtime")[domIndex].content
-            titleCatalog[domIndex].addRunTime(dom.by_class("runtime")[domIndex].content)
+            titleCatalog[domIndex].addRunTime( str(dom.by_class("runtime")[domIndex].content).encode('ascii', 'replace'))
         except:
             pass
 
         try:
             # print dom.by_class("value")[domIndex].content
-            titleCatalog[domIndex].addRank(dom.by_class("value")[domIndex].content)
+            titleCatalog[domIndex].addRank( str(dom.by_class("value")[domIndex].content).encode('ascii', 'replace'))
         except:
             pass
 
         try:
             for genre in dom.by_class("genre")[domIndex].by_tag("a"):
                 # print genre.content
-                titleCatalog[domIndex].addGenre(genre.content)
+                titleCatalog[domIndex].addGenre( str(genre.content).encode('ascii', 'replace'))
         except:
             pass
 
         try:
             for credit in dom.by_class("credit")[domIndex].by_tag("a"):
                 # print credit.content
-                titleCatalog[domIndex].addActors(credit.content)
+                titleCatalog[domIndex].addActors( str(credit.content).encode('ascii', 'replace'))
         except:
             pass
 
@@ -85,15 +85,13 @@ def generate_csv_log():
         writer.writerow(["Title", "Ranking", "Genre", "Actors", "Runtime"])
 
         for title in titleCatalog:
-            print "-----------------------" 
-            print title.titleName
-            print title.rank
-            print title.runTime 
-
-            print "\"%s\"" % (','.join( title.genres ))
-            print "\"%s\"" % (','.join( title.actors ))
-
-            writer.writerow([title.titleName, title.rank, "%s" % (','.join( title.genres )) , "%s" % (','.join( title.actors )), title.runTime ])
+            #print "-----------------------" 
+            #print title.titleName
+            #print title.rank
+            #print title.runTime 
+            #print "\"%s\"" % (','.join( title.genres ))
+            #print "\"%s\"" % (','.join( title.actors ))
+            writer.writerow([ title.titleName, title.rank, "%s" % (','.join( title.genres )) , "%s" % (','.join( title.actors )), title.runTime ])
 
 
     except IOError as e:
@@ -111,6 +109,5 @@ if __name__ == "__main__":
 
     process_page()
     generate_csv_log()
-
     print len(titleCatalog)
 
