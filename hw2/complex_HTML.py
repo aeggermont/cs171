@@ -207,34 +207,6 @@ def get_title_attributes(title, titleLink):
                 pass
 
 
-
-
-
-
-
-    """
-    objMatch = re.search("(\d+)", str(dom.by_tag("time")[0].content) )
-
-    if objMatch:
-        print objMatch.group(1)
-
-
-    # Get genre
-    for element in dom.by_tag("a"):
-        # if re.search("genre", element.attributes['href']):
-
-        try:
-            if re.search("genre", element.attributes['href']):
-                print element.attributes['href']
-                print element.content
-        except:
-            pass
-
-        #print element.href
-        #print dom.by_tag("a")[0].content
-
-    """
-
     return  titleObj
 
 
@@ -246,10 +218,30 @@ def generate_csv_log():
     try:
         output = open("my_output.csv", "wb")
         writer = csv.writer(output)
-        writer.writerow(["Title", "Ranking", "Genre", "Actors", "Runtime"])
+        writer.writerow(["Movie Title", "Time", "Genre", "Directors","Writers","Actors","Rating","Number of Ratings"])
 
-        for title in titleCatalog:
-            writer.writerow([ title.titleName, title.rank, "%s" % (','.join( title.genres )) , "%s" % (','.join( title.actors )), title.runTime ])
+        for movie in movieTitleCollection:
+            if len(movie.genres) > 1:
+                genres =  "%s" % (';'.join( movie.genres))
+            else:
+                genres = movie.genres[0]
+
+            if len(movie.directors) > 1:
+                directors =  "%s" % (';'.join( movie.directors))
+            else:
+                directors = movie.directors[0]
+
+            if len(movie.writers) > 1:
+                writers =  "%s" % (';'.join( movie.writers ))
+            else:
+                writers = movie.writers[0]
+
+            if len(movie.actors) > 1:
+                actors =  "%s" % (';'.join(movie.actors ))
+            else:
+                actors =  movie.actors[0]
+
+            writer.writerow([ movie.movieTitle , movie.runTime , genres , directors , writers , actors ,  movie.rating, movie.numRatings ])
 
 
     except IOError as e:
@@ -266,16 +258,40 @@ if __name__ == "__main__":
 
     htmlSrc = "http://www.imdb.com/chart/top"
     process_page(htmlSrc)
+    generate_csv_log()
+
+    sys.exit(0)
 
     print "======================================================"
+
+
 
     for movie in movieTitleCollection:
         print movie.movieTitle
         print movie.runTime
-        print movie.genres
-        print movie.directors
-        print movie.writers
-        print movie.actors
+
+        if len(movie.genres) > 1:
+           print "%s" % (';'.join( movie.genres))
+        else:
+            print movie.genres[0]
+
+        if len(movie.directors) > 1:
+            print "%s" % (';'.join( movie.directors))
+        else:
+            print movie.directors[0]
+
+
+        if len(movie.writers) > 1:
+            print "%s" % (';'.join( movie.writers ))
+        else:
+            print movie.writers[0]
+
+        if len(movie.actors) > 1:
+            print "%s" % (';'.join(movie.actors ))
+        else:
+            print movie.actors[0]
+
+
         print movie.rating
         print movie.numRatings
 
