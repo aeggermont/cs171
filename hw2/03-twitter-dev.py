@@ -1,7 +1,16 @@
 #!/usr/bin/env python
 
+"""
+Requirements:
+
+    Date (in format of 01/25/2013)
+    Time (in format of 00:25:29)
+"""
+
+
+
 import os, sys; sys.path.insert(0, os.path.join("..", ".."))
-import datetime
+import time
 
 from pattern.web import Twitter, hashtags
 from pattern.db  import Datasheet, pprint
@@ -10,16 +19,33 @@ engine = Twitter(language="en")
 
 print "About to start talking with tweeter API ... "
 
-for tweet in engine.search("visualization", count=100, cached=False):
-    print tweet.text
-    print tweet.author
-    print tweet.date
-    print hashtags(tweet.text)
-    # Creating a unique ID based on the tweet content and author.
-    id = str(hash(tweet.author + tweet.text))
-    print "ID: ", id
-    sys.exit(0)
+"""
+Twiter time date responses in ctime
+    Wed, 13 Feb 2013 02:01:55 +0000
 
+"""
+
+
+for tweet in engine.search("visualization", count=100, cached=False):
+
+    # Get a unique ID
+    id = str(hash(tweet.author + tweet.text))
+
+    # Parse time string to convert it to a struct_time
+    theTime = time.strptime(tweet.date, "%a, %d %b %Y %H:%M:%S +0000")
+
+    print "Text: ",   tweet.text
+    print "Author: ", tweet.author
+    print "Date: ",   time.strftime("%m/%d/%Y", theTime)
+    print "Time: ",   time.strftime("%H:%M:%S", theTime)
+    print "Full Date: ",     tweet.date             # In format of 01/25/2013
+    #print "The Time Date", theTime
+
+    print "ID: ", id
+    #sys.exit(0)
+
+
+sys.exit(0)
 
 # This example retrieves tweets containing given keywords from Twitter (http://twitter.com).
 try:
@@ -39,11 +65,10 @@ engine = Twitter(language="en")
 # With cached=False, a live request is sent to Twitter,
 # so we get the latest results for the query instead of those in the local cache.
 for tweet in engine.search("is cooler than", count=25, cached=False):
-    print tweet.text
-    print tweet.author
-    print tweet.date
+    print "Tweet text: ", tweet.text
+    print "Tweet author: ", tweet.author
+    print "Tweet date: ", tweet.date
     print hashtags(tweet.text) # Keywords in tweets start with a #.
-    print
     # Create a unique ID based on the tweet content and author.
     id = str(hash(tweet.author + tweet.text))
     # Only add the tweet to the table if it doesn't already contain this ID.
