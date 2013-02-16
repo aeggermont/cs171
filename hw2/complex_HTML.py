@@ -5,7 +5,7 @@
     Antonio A Eggermont
     Homework 2
 
-    Problem 2
+    Problem 2 - Instructions
 
 
     Look at the HTML source of this page: http://www.imdb.com/chart/top. From this source web page your
@@ -36,6 +36,7 @@ import os
 import sys
 import re
 import csv
+import unicodedata
 from pattern.web import URL, DOM, plaintext, strip_between
 from pattern.web import NODE, TEXT, COMMENT, ELEMENT, DOCUMENT
 
@@ -67,10 +68,14 @@ class Title:
         self.directors.append(director)
 
     def addActors(self, actor):
-        self.actors.append(actor)
+
+        if len(self.actors) < 3:
+            self.actors.append(actor)
 
     def addWriters(self, writer):
-        self.writers.append(writer)
+
+        if len(self.writers) < 3:
+            self.writers.append(writer)
 
     def addRating(self,rating):
         self.rating = rating
@@ -105,18 +110,12 @@ def process_page(page):
     print "Number of tables in the page: ", len (dom.by_tag('table'))
     print "Number of movie records: ", len (dom.by_tag('table')[1])
 
-    index = 0
-
     for link in dom.by_tag('table')[1]:
-        print "==================  TITLE ================== "
+        #print "==================  TITLE ================== "
         for a in link.by_tag('a'):
-            print "Getting attriburtes ... "
-            movieTitleCollection.append(get_title_attributes( a.content, "http://" + str(url.parts['domain']) + a.href))
+            #print "Getting attriburtes ... "
+            movieTitleCollection.append(get_title_attributes( str(a.content), "http://" + str(url.parts['domain']) + a.href))
 
-        #if index == 1:
-        #   break
-
-        index =+ 1
 
 
 
@@ -124,9 +123,7 @@ def get_title_attributes(title, titleLink):
 
     url = URL(titleLink)
     dom = DOM(url.download(cached=True))
-
-    titleObj = Title(title)
-
+    titleObj = Title(title.encode('ascii','replace'))
 
     print "Movie: ", title
 
@@ -138,8 +135,13 @@ def get_title_attributes(title, titleLink):
 
 
     for director in directorNames:
-        #print director.content
-        titleObj.addDirectors(director.content)
+        print director.content
+
+        dirName  = unicodedata.normalize('NFD', director.content).encode('ascii','replace')
+        #str(director.content).encode("utf-8")
+        print "Director ===> ", dirName
+
+        titleObj.addDirectors( dirName )
 
     # Get writers
     print "-> About to print writers... "
@@ -148,7 +150,7 @@ def get_title_attributes(title, titleLink):
         writers = dom.by_attribute(itemprop="writer")
         for writer in writers:
             # print writer[1][1].content
-            titleObj.addWriters(writer[1][1].content)
+            titleObj.addWriters( str(writer[1][1].content).encode('ascii', 'replace'))
     except:
         pass
 
@@ -159,7 +161,7 @@ def get_title_attributes(title, titleLink):
         actors = dom.by_attribute(itemprop="actors" )
         for actor in actors:
             # print actor[1][1].content
-            titleObj.addActors(actor[1][1].content)
+            titleObj.addActors( str(actor[1][1].content).encode('ascii', 'replace'))
     except:
         pass
 
@@ -172,7 +174,7 @@ def get_title_attributes(title, titleLink):
 
         for rating in ratingsInfo:
             # print rating.content
-            titleObj.addRating(rating.content)
+            titleObj.addRating(str(rating.content).encode('ascii', 'replace'))
     except:
         pass
 
@@ -188,7 +190,7 @@ def get_title_attributes(title, titleLink):
 
             if objMatch:
                 # print objMatch.group(1)
-                titleObj.addRunTime(objMatch.group(1))
+                titleObj.addRunTime( str(objMatch.group(1)).encode('ascii', 'replace'))
         except:
             pass
 
@@ -200,7 +202,7 @@ def get_title_attributes(title, titleLink):
                 objMatch = re.search("genre", genreItem.attributes['href'] )
 
                 if objMatch:
-                    titleObj.addGenre(genreItem.content)
+                    titleObj.addGenre(str(genreItem.content).encode('ascii', 'replace'))
                     # print genreItem.attributes['href']
                     # print genreItem.content
             except:
@@ -228,18 +230,24 @@ def generate_csv_log():
 
             if len(movie.directors) > 1:
                 directors =  "%s" % (';'.join( movie.directors))
-            else:
+            elif len(movie.directors) != 0 :
                 directors = movie.directors[0]
+            else:
+                continue
 
             if len(movie.writers) > 1:
                 writers =  "%s" % (';'.join( movie.writers ))
-            else:
+            elif len(movie.writers) != 0:
                 writers = movie.writers[0]
+            else:
+                continue
 
             if len(movie.actors) > 1:
                 actors =  "%s" % (';'.join(movie.actors ))
-            else:
+            elif len(movie.actors) != 0:
                 actors =  movie.actors[0]
+            else:
+                continue
 
             writer.writerow([ movie.movieTitle , movie.runTime , genres , directors , writers , actors ,  movie.rating, movie.numRatings ])
 
