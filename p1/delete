@@ -1,0 +1,1982 @@
+[
+  {
+    "sha": "054e644e052d78f0f123aea34509d72c89238f49",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T19:19:23Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T19:19:23Z"
+      },
+      "message": "Simplify the Resolver interface.\n\nMost callers do not need the full generality of getaddrinfo, and\nmost alternative resolver implementations cannot provide it.",
+      "tree": {
+        "sha": "46de3a985c39b6bbbab8ac54bb15e27b58cf4380",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/46de3a985c39b6bbbab8ac54bb15e27b58cf4380"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/054e644e052d78f0f123aea34509d72c89238f49",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/054e644e052d78f0f123aea34509d72c89238f49",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/054e644e052d78f0f123aea34509d72c89238f49/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "d735bd818ae92a54504f42c66c487b0556d5d6dc",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/d735bd818ae92a54504f42c66c487b0556d5d6dc"
+      }
+    ]
+  },
+  {
+    "sha": "d735bd818ae92a54504f42c66c487b0556d5d6dc",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T17:43:06Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T17:56:09Z"
+      },
+      "message": "Add a resolver test script for external queries that cannot be unittested.\n\nNote an issue with CaresResolver (it cannot resolve www.dropbox.com when\nfamily==AF_UNSPEC)",
+      "tree": {
+        "sha": "0217c013fdf29953668f457da3ff1e07293ee112",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/0217c013fdf29953668f457da3ff1e07293ee112"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/d735bd818ae92a54504f42c66c487b0556d5d6dc",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/d735bd818ae92a54504f42c66c487b0556d5d6dc",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/d735bd818ae92a54504f42c66c487b0556d5d6dc/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "b02c202b92e648b4c50a905507c401764ea5c57e",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/b02c202b92e648b4c50a905507c401764ea5c57e"
+      }
+    ]
+  },
+  {
+    "sha": "b02c202b92e648b4c50a905507c401764ea5c57e",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T17:25:04Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T17:25:04Z"
+      },
+      "message": "Add a c-ares-based resolver implementation.",
+      "tree": {
+        "sha": "4acb2c4145258d4b64fa787857853b54379c215e",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/4acb2c4145258d4b64fa787857853b54379c215e"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/b02c202b92e648b4c50a905507c401764ea5c57e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/b02c202b92e648b4c50a905507c401764ea5c57e",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/b02c202b92e648b4c50a905507c401764ea5c57e/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "7069d183756f947a95c0412075b5e379122349de",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/7069d183756f947a95c0412075b5e379122349de"
+      }
+    ]
+  },
+  {
+    "sha": "7069d183756f947a95c0412075b5e379122349de",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T16:47:30Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-24T16:47:30Z"
+      },
+      "message": "Move HTTPServer's valid_ip function to netutil.",
+      "tree": {
+        "sha": "915e56bd995ad3c14c26091a04b85ab43f67803d",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/915e56bd995ad3c14c26091a04b85ab43f67803d"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/7069d183756f947a95c0412075b5e379122349de",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/7069d183756f947a95c0412075b5e379122349de",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/7069d183756f947a95c0412075b5e379122349de/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "0e44baf70056f67ded16b12a04f2cbc87fe054cd",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/0e44baf70056f67ded16b12a04f2cbc87fe054cd"
+      }
+    ]
+  },
+  {
+    "sha": "0e44baf70056f67ded16b12a04f2cbc87fe054cd",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T23:46:08Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T23:46:08Z"
+      },
+      "message": "Add a test that runs TwistedIOLoop on top of TornadoReactor.\n\nThis exposed a few more small bugs.",
+      "tree": {
+        "sha": "49e924e8c020c75c73c4da01ae4816d3cef9325d",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/49e924e8c020c75c73c4da01ae4816d3cef9325d"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/0e44baf70056f67ded16b12a04f2cbc87fe054cd",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/0e44baf70056f67ded16b12a04f2cbc87fe054cd",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/0e44baf70056f67ded16b12a04f2cbc87fe054cd/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "57130dfbc21fc009305f89fd553b8695c179e76d",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/57130dfbc21fc009305f89fd553b8695c179e76d"
+      }
+    ]
+  },
+  {
+    "sha": "57130dfbc21fc009305f89fd553b8695c179e76d",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T18:15:04Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T20:19:04Z"
+      },
+      "message": "Add TwistedResolver for non-threaded async DNS resolution.",
+      "tree": {
+        "sha": "7593373d32ebaa2240bf267e078974047cbc0451",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/7593373d32ebaa2240bf267e078974047cbc0451"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/57130dfbc21fc009305f89fd553b8695c179e76d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/57130dfbc21fc009305f89fd553b8695c179e76d",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/57130dfbc21fc009305f89fd553b8695c179e76d/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "5d230aa01b0cfa9185ee75c408dd5b1b81b34f20",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/5d230aa01b0cfa9185ee75c408dd5b1b81b34f20"
+      }
+    ]
+  },
+  {
+    "sha": "5d230aa01b0cfa9185ee75c408dd5b1b81b34f20",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T17:53:04Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T17:53:04Z"
+      },
+      "message": "If a @return_future function raises immediately, don't run the callback.",
+      "tree": {
+        "sha": "bfcff35e27681e11a868d97b9df025a2db1ef03f",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/bfcff35e27681e11a868d97b9df025a2db1ef03f"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/5d230aa01b0cfa9185ee75c408dd5b1b81b34f20",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/5d230aa01b0cfa9185ee75c408dd5b1b81b34f20",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/5d230aa01b0cfa9185ee75c408dd5b1b81b34f20/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "99188df220c2efbdc4ff41838fcfa7a853d672fb",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/99188df220c2efbdc4ff41838fcfa7a853d672fb"
+      }
+    ]
+  },
+  {
+    "sha": "99188df220c2efbdc4ff41838fcfa7a853d672fb",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T15:59:13Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T15:59:13Z"
+      },
+      "message": "stack_context.wrap() the callback passed in to a @return_future function.",
+      "tree": {
+        "sha": "17c69e597d2a3a8750588245478c21db1595f92c",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/17c69e597d2a3a8750588245478c21db1595f92c"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/99188df220c2efbdc4ff41838fcfa7a853d672fb",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/99188df220c2efbdc4ff41838fcfa7a853d672fb",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/99188df220c2efbdc4ff41838fcfa7a853d672fb/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "4731072f6171180c6fa07fc691646cb0cf33ed23",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/4731072f6171180c6fa07fc691646cb0cf33ed23"
+      }
+    ]
+  },
+  {
+    "sha": "4731072f6171180c6fa07fc691646cb0cf33ed23",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T15:53:31Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T15:53:31Z"
+      },
+      "message": "Move fallback exception raising in AsyncTestCase from run() to tearDown().\n\nThis allows the exception to be reported as a test failure instead of\nmaking the test run blow up.",
+      "tree": {
+        "sha": "e8375426571032cebca33d9c632edd57827e9b41",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/e8375426571032cebca33d9c632edd57827e9b41"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/4731072f6171180c6fa07fc691646cb0cf33ed23",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/4731072f6171180c6fa07fc691646cb0cf33ed23",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/4731072f6171180c6fa07fc691646cb0cf33ed23/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "4e156a97ba0ff6445d6e3ac504bba7bbf1d53983",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/4e156a97ba0ff6445d6e3ac504bba7bbf1d53983"
+      }
+    ]
+  },
+  {
+    "sha": "4e156a97ba0ff6445d6e3ac504bba7bbf1d53983",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T15:31:53Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-23T15:46:15Z"
+      },
+      "message": "Add a test case for the synchronous HTTPClient.",
+      "tree": {
+        "sha": "95503b102d0efaebd47a9cc2866e8e446f977710",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/95503b102d0efaebd47a9cc2866e8e446f977710"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/4e156a97ba0ff6445d6e3ac504bba7bbf1d53983",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/4e156a97ba0ff6445d6e3ac504bba7bbf1d53983",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/4e156a97ba0ff6445d6e3ac504bba7bbf1d53983/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "d4167f97880a35ef5b32433455e804fa1a24e38b",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/d4167f97880a35ef5b32433455e804fa1a24e38b"
+      }
+    ]
+  },
+  {
+    "sha": "d4167f97880a35ef5b32433455e804fa1a24e38b",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-21T03:03:28Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-21T03:03:28Z"
+      },
+      "message": "Clean up more timeouts when shutting down HTTP clients or finishing tests.",
+      "tree": {
+        "sha": "a78892cc486bef9bb2936a9c30a1b7b4916bf58a",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/a78892cc486bef9bb2936a9c30a1b7b4916bf58a"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/d4167f97880a35ef5b32433455e804fa1a24e38b",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/d4167f97880a35ef5b32433455e804fa1a24e38b",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/d4167f97880a35ef5b32433455e804fa1a24e38b/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "88e94c819046b9f986d9d0cd4c554d40f1230d5c",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/88e94c819046b9f986d9d0cd4c554d40f1230d5c"
+      }
+    ]
+  },
+  {
+    "sha": "f5c6a4d4df835070066ada68dd3e5e684f0e1e11",
+    "commit": {
+      "author": {
+        "name": "Vladlen Y. Koshelev",
+        "email": "vlad.kosh@gmail.com",
+        "date": "2013-02-19T22:27:11Z"
+      },
+      "committer": {
+        "name": "Vladlen Y. Koshelev",
+        "email": "vlad.kosh@gmail.com",
+        "date": "2013-02-19T22:27:11Z"
+      },
+      "message": "Remove timeout callback on errors during connect or request.",
+      "tree": {
+        "sha": "3c1dfd9152243d0138c846bec18145e502baa835",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/3c1dfd9152243d0138c846bec18145e502baa835"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/f5c6a4d4df835070066ada68dd3e5e684f0e1e11",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/f5c6a4d4df835070066ada68dd3e5e684f0e1e11",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/f5c6a4d4df835070066ada68dd3e5e684f0e1e11/comments",
+    "author": {
+      "login": "vkosh",
+      "id": 28398,
+      "avatar_url": "https://secure.gravatar.com/avatar/7a05995ca99d6648d4b274392be31404?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "7a05995ca99d6648d4b274392be31404",
+      "url": "https://api.github.com/users/vkosh",
+      "html_url": "https://github.com/vkosh",
+      "followers_url": "https://api.github.com/users/vkosh/followers",
+      "following_url": "https://api.github.com/users/vkosh/following",
+      "gists_url": "https://api.github.com/users/vkosh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vkosh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vkosh/subscriptions",
+      "organizations_url": "https://api.github.com/users/vkosh/orgs",
+      "repos_url": "https://api.github.com/users/vkosh/repos",
+      "events_url": "https://api.github.com/users/vkosh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vkosh/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "vkosh",
+      "id": 28398,
+      "avatar_url": "https://secure.gravatar.com/avatar/7a05995ca99d6648d4b274392be31404?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "7a05995ca99d6648d4b274392be31404",
+      "url": "https://api.github.com/users/vkosh",
+      "html_url": "https://github.com/vkosh",
+      "followers_url": "https://api.github.com/users/vkosh/followers",
+      "following_url": "https://api.github.com/users/vkosh/following",
+      "gists_url": "https://api.github.com/users/vkosh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vkosh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vkosh/subscriptions",
+      "organizations_url": "https://api.github.com/users/vkosh/orgs",
+      "repos_url": "https://api.github.com/users/vkosh/repos",
+      "events_url": "https://api.github.com/users/vkosh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vkosh/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "1c1f85d027e902c4d1ebaff26ee2dc3a7223af4d",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/1c1f85d027e902c4d1ebaff26ee2dc3a7223af4d"
+      }
+    ]
+  },
+  {
+    "sha": "1c1f85d027e902c4d1ebaff26ee2dc3a7223af4d",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-19T04:20:16Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-19T04:20:16Z"
+      },
+      "message": "Test the @return_future return value assertion and move it again.",
+      "tree": {
+        "sha": "305ee873475b6d3844103b429fd8d12f1f5b8dbb",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/305ee873475b6d3844103b429fd8d12f1f5b8dbb"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/1c1f85d027e902c4d1ebaff26ee2dc3a7223af4d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/1c1f85d027e902c4d1ebaff26ee2dc3a7223af4d",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/1c1f85d027e902c4d1ebaff26ee2dc3a7223af4d/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "f695e4e471e503641390a372e5ddf6a67abb3c97",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/f695e4e471e503641390a372e5ddf6a67abb3c97"
+      }
+    ]
+  },
+  {
+    "sha": "f695e4e471e503641390a372e5ddf6a67abb3c97",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-19T04:03:19Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-19T04:03:19Z"
+      },
+      "message": "Exceptions in a @return_future function go to both the caller and the Future.\n\nAdd a test for the UnboundLocal error seen here and remove the\nno-longer-needed initialization.  I'm not 100% sure we want to do both\n(due to the risk of callback-doubling), but the old way where the caller\nsaw one error and the future resolved to a different error was clearly\nincorrect, and leaving the future unresolved doesn't seem right either.",
+      "tree": {
+        "sha": "2340f66179218e988d6612ead23e5ec676cc3e9b",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/2340f66179218e988d6612ead23e5ec676cc3e9b"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/f695e4e471e503641390a372e5ddf6a67abb3c97",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/f695e4e471e503641390a372e5ddf6a67abb3c97",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/f695e4e471e503641390a372e5ddf6a67abb3c97/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "7368cfcca25467709f8afb888846d561759fe072",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/7368cfcca25467709f8afb888846d561759fe072"
+      }
+    ]
+  },
+  {
+    "sha": "b3585b0e2c2082e140ab668843325b4276c207fa",
+    "commit": {
+      "author": {
+        "name": "Vladlen Y. Koshelev",
+        "email": "vlad.kosh@gmail.com",
+        "date": "2013-02-18T21:16:54Z"
+      },
+      "committer": {
+        "name": "Vladlen Y. Koshelev",
+        "email": "vlad.kosh@gmail.com",
+        "date": "2013-02-18T21:16:54Z"
+      },
+      "message": "Fix docstrings quoting.",
+      "tree": {
+        "sha": "f39a31703496e90a1c6b95bf34760164a8001b89",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/f39a31703496e90a1c6b95bf34760164a8001b89"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/b3585b0e2c2082e140ab668843325b4276c207fa",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/b3585b0e2c2082e140ab668843325b4276c207fa",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/b3585b0e2c2082e140ab668843325b4276c207fa/comments",
+    "author": {
+      "login": "vkosh",
+      "id": 28398,
+      "avatar_url": "https://secure.gravatar.com/avatar/7a05995ca99d6648d4b274392be31404?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "7a05995ca99d6648d4b274392be31404",
+      "url": "https://api.github.com/users/vkosh",
+      "html_url": "https://github.com/vkosh",
+      "followers_url": "https://api.github.com/users/vkosh/followers",
+      "following_url": "https://api.github.com/users/vkosh/following",
+      "gists_url": "https://api.github.com/users/vkosh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vkosh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vkosh/subscriptions",
+      "organizations_url": "https://api.github.com/users/vkosh/orgs",
+      "repos_url": "https://api.github.com/users/vkosh/repos",
+      "events_url": "https://api.github.com/users/vkosh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vkosh/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "vkosh",
+      "id": 28398,
+      "avatar_url": "https://secure.gravatar.com/avatar/7a05995ca99d6648d4b274392be31404?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "7a05995ca99d6648d4b274392be31404",
+      "url": "https://api.github.com/users/vkosh",
+      "html_url": "https://github.com/vkosh",
+      "followers_url": "https://api.github.com/users/vkosh/followers",
+      "following_url": "https://api.github.com/users/vkosh/following",
+      "gists_url": "https://api.github.com/users/vkosh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vkosh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vkosh/subscriptions",
+      "organizations_url": "https://api.github.com/users/vkosh/orgs",
+      "repos_url": "https://api.github.com/users/vkosh/repos",
+      "events_url": "https://api.github.com/users/vkosh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vkosh/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "4a5c267371ebd50b73ab0a29a75465a6cda26154",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/4a5c267371ebd50b73ab0a29a75465a6cda26154"
+      }
+    ]
+  },
+  {
+    "sha": "4a5c267371ebd50b73ab0a29a75465a6cda26154",
+    "commit": {
+      "author": {
+        "name": "Vladlen Y. Koshelev",
+        "email": "vlad.kosh@gmail.com",
+        "date": "2013-02-18T20:39:17Z"
+      },
+      "committer": {
+        "name": "Vladlen Y. Koshelev",
+        "email": "vlad.kosh@gmail.com",
+        "date": "2013-02-18T21:06:51Z"
+      },
+      "message": "Rename local var so it doesn't shadow the \"list\" built-in.",
+      "tree": {
+        "sha": "f05728d81d2c034c01615138ee95781e3b14db7d",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/f05728d81d2c034c01615138ee95781e3b14db7d"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/4a5c267371ebd50b73ab0a29a75465a6cda26154",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/4a5c267371ebd50b73ab0a29a75465a6cda26154",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/4a5c267371ebd50b73ab0a29a75465a6cda26154/comments",
+    "author": {
+      "login": "vkosh",
+      "id": 28398,
+      "avatar_url": "https://secure.gravatar.com/avatar/7a05995ca99d6648d4b274392be31404?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "7a05995ca99d6648d4b274392be31404",
+      "url": "https://api.github.com/users/vkosh",
+      "html_url": "https://github.com/vkosh",
+      "followers_url": "https://api.github.com/users/vkosh/followers",
+      "following_url": "https://api.github.com/users/vkosh/following",
+      "gists_url": "https://api.github.com/users/vkosh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vkosh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vkosh/subscriptions",
+      "organizations_url": "https://api.github.com/users/vkosh/orgs",
+      "repos_url": "https://api.github.com/users/vkosh/repos",
+      "events_url": "https://api.github.com/users/vkosh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vkosh/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "vkosh",
+      "id": 28398,
+      "avatar_url": "https://secure.gravatar.com/avatar/7a05995ca99d6648d4b274392be31404?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "7a05995ca99d6648d4b274392be31404",
+      "url": "https://api.github.com/users/vkosh",
+      "html_url": "https://github.com/vkosh",
+      "followers_url": "https://api.github.com/users/vkosh/followers",
+      "following_url": "https://api.github.com/users/vkosh/following",
+      "gists_url": "https://api.github.com/users/vkosh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vkosh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vkosh/subscriptions",
+      "organizations_url": "https://api.github.com/users/vkosh/orgs",
+      "repos_url": "https://api.github.com/users/vkosh/repos",
+      "events_url": "https://api.github.com/users/vkosh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vkosh/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "ff2e119a488975f53d4052dc9ac662d95c581da0",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/ff2e119a488975f53d4052dc9ac662d95c581da0"
+      }
+    ]
+  },
+  {
+    "sha": "96f654ed226fc28c0654d9e0537bf2d1d48ca89e",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T05:28:05Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T05:28:05Z"
+      },
+      "message": "Ensure the result variable is initialized even when an exception is handled.",
+      "tree": {
+        "sha": "e7b30da4445fd6f0200df322af2d16862ea6a822",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/e7b30da4445fd6f0200df322af2d16862ea6a822"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/96f654ed226fc28c0654d9e0537bf2d1d48ca89e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/96f654ed226fc28c0654d9e0537bf2d1d48ca89e",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/96f654ed226fc28c0654d9e0537bf2d1d48ca89e/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "b605c0a5f74aa734daab63fcb84e549b4d5346b1",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/b605c0a5f74aa734daab63fcb84e549b4d5346b1"
+      }
+    ]
+  },
+  {
+    "sha": "b605c0a5f74aa734daab63fcb84e549b4d5346b1",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T04:57:38Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T04:57:38Z"
+      },
+      "message": "Make Resolver's callback argument optional when the Future result is used.",
+      "tree": {
+        "sha": "b6e204d04994b021f71ff4accd79691a472d50ac",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/b6e204d04994b021f71ff4accd79691a472d50ac"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/b605c0a5f74aa734daab63fcb84e549b4d5346b1",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/b605c0a5f74aa734daab63fcb84e549b4d5346b1",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/b605c0a5f74aa734daab63fcb84e549b4d5346b1/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "21acd099a7597ada52d0e516eddde69f2f037799",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/21acd099a7597ada52d0e516eddde69f2f037799"
+      }
+    ]
+  },
+  {
+    "sha": "21acd099a7597ada52d0e516eddde69f2f037799",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T04:12:15Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T04:12:15Z"
+      },
+      "message": "Make Resolver Configurable and test with a threaded resolver.",
+      "tree": {
+        "sha": "906f4a127e28afe0de6cc0ffe133da73307b7531",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/906f4a127e28afe0de6cc0ffe133da73307b7531"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/21acd099a7597ada52d0e516eddde69f2f037799",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/21acd099a7597ada52d0e516eddde69f2f037799",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/21acd099a7597ada52d0e516eddde69f2f037799/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "5ba5cdccd607035b97bb337a1ee8b03f15ce4c53",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/5ba5cdccd607035b97bb337a1ee8b03f15ce4c53"
+      }
+    ]
+  },
+  {
+    "sha": "5ba5cdccd607035b97bb337a1ee8b03f15ce4c53",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T03:46:52Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T03:46:52Z"
+      },
+      "message": "Add a future-based interface to AsyncHTTPClient.fetch.",
+      "tree": {
+        "sha": "d9377e5b6a0f082d2abe77c7482c7069cfb7c2d4",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/d9377e5b6a0f082d2abe77c7482c7069cfb7c2d4"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/5ba5cdccd607035b97bb337a1ee8b03f15ce4c53",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/5ba5cdccd607035b97bb337a1ee8b03f15ce4c53",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/5ba5cdccd607035b97bb337a1ee8b03f15ce4c53/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "1785e0a769b7a175fd0750599b098920f1bb8931",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/1785e0a769b7a175fd0750599b098920f1bb8931"
+      }
+    ]
+  },
+  {
+    "sha": "1785e0a769b7a175fd0750599b098920f1bb8931",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T00:16:14Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T00:16:14Z"
+      },
+      "message": "simple_httpclient._HTTPConnection now takes a resolver directly.\n\nThis makes the \"client\" parameter optional for websocket connections.",
+      "tree": {
+        "sha": "ff641afde36e900b62c993a34168d3b6f920e5ae",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/ff641afde36e900b62c993a34168d3b6f920e5ae"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/1785e0a769b7a175fd0750599b098920f1bb8931",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/1785e0a769b7a175fd0750599b098920f1bb8931",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/1785e0a769b7a175fd0750599b098920f1bb8931/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "20a3d626096079f938f089e882899d4947ad6fa8",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/20a3d626096079f938f089e882899d4947ad6fa8"
+      }
+    ]
+  },
+  {
+    "sha": "20a3d626096079f938f089e882899d4947ad6fa8",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T00:08:10Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-18T00:08:10Z"
+      },
+      "message": "Make simple_httpclient's hostname_mapping a Resolver wrapper.",
+      "tree": {
+        "sha": "3c76cc7f039219436541e73255a2879d282c6c39",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/3c76cc7f039219436541e73255a2879d282c6c39"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/20a3d626096079f938f089e882899d4947ad6fa8",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/20a3d626096079f938f089e882899d4947ad6fa8",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/20a3d626096079f938f089e882899d4947ad6fa8/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "909c03363e9170401e8872153420453a80243fb9",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/909c03363e9170401e8872153420453a80243fb9"
+      }
+    ]
+  },
+  {
+    "sha": "909c03363e9170401e8872153420453a80243fb9",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T23:40:51Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T23:40:51Z"
+      },
+      "message": "Add a test for simple_httpclient's hostname_mapping.",
+      "tree": {
+        "sha": "b8ccbe78aaec44a0a427a3ba95bd8c183c7a1ecf",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/b8ccbe78aaec44a0a427a3ba95bd8c183c7a1ecf"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/909c03363e9170401e8872153420453a80243fb9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/909c03363e9170401e8872153420453a80243fb9",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/909c03363e9170401e8872153420453a80243fb9/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "5b459c076b1179fe3f58829e0f065e6175e8d420",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/5b459c076b1179fe3f58829e0f065e6175e8d420"
+      }
+    ]
+  },
+  {
+    "sha": "5b459c076b1179fe3f58829e0f065e6175e8d420",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T23:28:44Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T23:28:44Z"
+      },
+      "message": "Centralize some shared logic bewteen HTTPClient implementations.",
+      "tree": {
+        "sha": "fb459d2d843c3746b6303308f82036e942088310",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/fb459d2d843c3746b6303308f82036e942088310"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/5b459c076b1179fe3f58829e0f065e6175e8d420",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/5b459c076b1179fe3f58829e0f065e6175e8d420",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/5b459c076b1179fe3f58829e0f065e6175e8d420/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "1824da47d208c58553d168227916f1933d2b3044",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/1824da47d208c58553d168227916f1933d2b3044"
+      }
+    ]
+  },
+  {
+    "sha": "1824da47d208c58553d168227916f1933d2b3044",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T22:54:09Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T22:54:09Z"
+      },
+      "message": "Use the future interface internally for _oauth_get_user.\n\nAdded a new method _oauth_get_user_future because the old method was\nde facto public for third-party auth plugins.",
+      "tree": {
+        "sha": "6d00b01376beed22cd5e668238b5093dd61484b8",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/6d00b01376beed22cd5e668238b5093dd61484b8"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/1824da47d208c58553d168227916f1933d2b3044",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/1824da47d208c58553d168227916f1933d2b3044",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/1824da47d208c58553d168227916f1933d2b3044/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "6fd769763bd35831383a55aa702d42d8d12b0d2a",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/6fd769763bd35831383a55aa702d42d8d12b0d2a"
+      }
+    ]
+  },
+  {
+    "sha": "6fd769763bd35831383a55aa702d42d8d12b0d2a",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T22:13:45Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T22:43:45Z"
+      },
+      "message": "Add future interface to most of the rest of the auth module.\n\n_oauth_get_user still uses callbacks internally, and I haven't\nchanged the old deprecated FacebookMixin.",
+      "tree": {
+        "sha": "2318e91b2283da4a00ed796c68b853a430c6f973",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/2318e91b2283da4a00ed796c68b853a430c6f973"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/6fd769763bd35831383a55aa702d42d8d12b0d2a",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/6fd769763bd35831383a55aa702d42d8d12b0d2a",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/6fd769763bd35831383a55aa702d42d8d12b0d2a/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "a3a709ae7077141310d00599aa1b7d104d19a49f",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/a3a709ae7077141310d00599aa1b7d104d19a49f"
+      }
+    ]
+  },
+  {
+    "sha": "a3a709ae7077141310d00599aa1b7d104d19a49f",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T21:21:01Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T21:21:01Z"
+      },
+      "message": "Add a Future-based interface to tornado.auth's twitter_request.\n\nThis allows new clients to receive exception messages from failed\nrequests, without breaking compatibility with existing callback-based\nclients.",
+      "tree": {
+        "sha": "58ed28e7c5237af678b15d72ca22199d70555d57",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/58ed28e7c5237af678b15d72ca22199d70555d57"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/a3a709ae7077141310d00599aa1b7d104d19a49f",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/a3a709ae7077141310d00599aa1b7d104d19a49f",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/a3a709ae7077141310d00599aa1b7d104d19a49f/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "c567f04f797bc5c00368acd3f716cf08d125d995",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/c567f04f797bc5c00368acd3f716cf08d125d995"
+      }
+    ]
+  },
+  {
+    "sha": "c567f04f797bc5c00368acd3f716cf08d125d995",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T17:25:22Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T17:25:22Z"
+      },
+      "message": "Factor argument replacement logic out of @return_future",
+      "tree": {
+        "sha": "d493fb7ce846a78808015c43548b9c20e979e79e",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/d493fb7ce846a78808015c43548b9c20e979e79e"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/c567f04f797bc5c00368acd3f716cf08d125d995",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/c567f04f797bc5c00368acd3f716cf08d125d995",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/c567f04f797bc5c00368acd3f716cf08d125d995/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "75176a01ebc8d79e80bed2c032bbdcb996f78b94",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/75176a01ebc8d79e80bed2c032bbdcb996f78b94"
+      }
+    ]
+  },
+  {
+    "sha": "8e2900205732315c90842597ad4cf234143a2972",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T05:03:45Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-17T05:03:45Z"
+      },
+      "message": "Add a simple websocket client and unittest",
+      "tree": {
+        "sha": "868731b0094b0dba34e662c8a818221c7d2b2472",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/868731b0094b0dba34e662c8a818221c7d2b2472"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/8e2900205732315c90842597ad4cf234143a2972",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/8e2900205732315c90842597ad4cf234143a2972",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/8e2900205732315c90842597ad4cf234143a2972/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "ddbb7e8adcf01095684fba442dcd38ff978356a5",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/ddbb7e8adcf01095684fba442dcd38ff978356a5"
+      }
+    ]
+  },
+  {
+    "sha": "ddbb7e8adcf01095684fba442dcd38ff978356a5",
+    "commit": {
+      "author": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-16T16:18:50Z"
+      },
+      "committer": {
+        "name": "Ben Darnell",
+        "email": "ben@bendarnell.com",
+        "date": "2013-02-16T16:18:50Z"
+      },
+      "message": "Add a test for subprocess with stderr as a separate stream",
+      "tree": {
+        "sha": "c0c2f54fa0aaa19d9a13aaad18d419914ee7485e",
+        "url": "https://api.github.com/repos/facebook/tornado/git/trees/c0c2f54fa0aaa19d9a13aaad18d419914ee7485e"
+      },
+      "url": "https://api.github.com/repos/facebook/tornado/git/commits/ddbb7e8adcf01095684fba442dcd38ff978356a5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/facebook/tornado/commits/ddbb7e8adcf01095684fba442dcd38ff978356a5",
+    "comments_url": "https://api.github.com/repos/facebook/tornado/commits/ddbb7e8adcf01095684fba442dcd38ff978356a5/comments",
+    "author": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "committer": {
+      "login": "bdarnell",
+      "id": 160562,
+      "avatar_url": "https://secure.gravatar.com/avatar/5947d19db094dcaf873c8b886a725d06?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "5947d19db094dcaf873c8b886a725d06",
+      "url": "https://api.github.com/users/bdarnell",
+      "html_url": "https://github.com/bdarnell",
+      "followers_url": "https://api.github.com/users/bdarnell/followers",
+      "following_url": "https://api.github.com/users/bdarnell/following",
+      "gists_url": "https://api.github.com/users/bdarnell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bdarnell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bdarnell/subscriptions",
+      "organizations_url": "https://api.github.com/users/bdarnell/orgs",
+      "repos_url": "https://api.github.com/users/bdarnell/repos",
+      "events_url": "https://api.github.com/users/bdarnell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bdarnell/received_events",
+      "type": "User"
+    },
+    "parents": [
+      {
+        "sha": "e7665ccf3a4a84c5f40a41807c594eae4906ee0c",
+        "url": "https://api.github.com/repos/facebook/tornado/commits/e7665ccf3a4a84c5f40a41807c594eae4906ee0c"
+      }
+    ]
+  }
+]
