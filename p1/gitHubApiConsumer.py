@@ -229,7 +229,7 @@ def getCommitsInComponent(component, logFile, writer):
             if matchobj3:
                 #print line
                 #print time.strftime( "%b %d %Y", time.strptime(matchobj3.group(1),"%a %b %d %H:%M:%S %Y"))
-                record['date'] = time.strftime( "%b %d %Y", time.strptime(matchobj3.group(1),"%a %b %d %H:%M:%S %Y"))
+                record['date'] = time.strftime( "%b/%d/%Y", time.strptime(matchobj3.group(1),"%a %b %d %H:%M:%S %Y"))
                 dateFound = True
 
 
