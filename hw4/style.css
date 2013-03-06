@@ -1,0 +1,311 @@
+
+html, body, div, h1, form, fieldset, input, textarea, li, ul, hr, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+div#about {
+    background: #fff;
+    height: 20px;
+    width: 100px;
+}
+
+
+div#test {
+    background: #fff;
+    height: 200px;
+    width: 200px;
+    border: 1;
+}
+
+
+#homeRow2
+{
+    height:296px;
+}
+
+div {
+    position:relative;
+
+    border: 1px solid  #000;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.middleBlocks {
+    height: 260px;
+    width: 310px;
+}
+
+
+
+
+div#row1b1 {
+    position: absolute;
+    left: 100px;
+    top: 145px;
+    height: 335px;
+    width: 140px;
+}
+
+div#row1b2 {
+    position: absolute;
+    left: 260px;
+    top: 170px;
+    height: 335px;
+    width: 560px;
+}
+
+div#row1b3 {
+    position: absolute;
+    left: 822px;
+    top: 170px;
+    height: 335px;
+    width: 245px;
+}
+
+
+div#row2b1 {
+    position: absolute;
+    left: 100px;
+    top: 540px;
+}
+
+div#row2b2 {
+    position: absolute;
+    left: 430px;
+    top: 540px;
+}
+
+div#row2b3 {
+    position: absolute;
+    left: 760px;
+    top: 540px;
+}
+
+
+div#row3b1 {
+    position: absolute;
+    left: 100px;
+    top: 835px;
+}
+
+div#row3b2 {
+    position: absolute;
+    left: 430px;
+    top: 835px;
+}
+
+div#row3b3 {
+    position: absolute;
+    left: 760px;
+    top: 835px;
+}
+
+
+div#row4b1a {
+    position: absolute;
+    left: 100px;
+    top: 1120px;
+    height: 100px;
+    width: 310px;
+}
+
+div#row4b1b {
+    position: absolute;
+    left: 100px;
+    top: 1220px;
+    height: 100px;
+    width: 310px;
+}
+
+div#row4b1c {
+    position: absolute;
+    left: 100px;
+    top: 1320px;
+    height: 100px;
+    width: 310px;
+}
+
+div#row4b1d {
+    position: absolute;
+    left: 100px;
+    top: 1420px;
+    height: 100px;
+    width: 310px;
+}
+
+div#row4b2a {
+    position: absolute;
+    left: 430px;
+    top: 1120px;
+    height: 145px;
+    width: 190px;
+}
+
+div#row4b2b {
+    position: absolute;
+    left: 630px;
+    top: 1120px;
+    height: 145px;
+    width: 190px;
+}
+
+
+div#row4b3a {
+    position: absolute;
+    left: 430px;
+    top: 1275px;
+    height: 145px;
+    width: 190px;
+}
+
+div#row4b3b {
+    position: absolute;
+    left: 630px;
+    top: 1275px;
+    height: 145px;
+    width: 190px;
+}
+
+
+div#row4b4a {
+    position: absolute;
+    left: 430px;
+    top: 1430px;
+    height: 145px;
+    width: 190px;
+}
+
+div#row4b4b {
+    position: absolute;
+    left: 630px;
+    top: 1430px;
+    height: 145px;
+    width: 190px;
+}
+
+
+div#row5a1 {
+    position: absolute;
+    left: 430px;
+    top: 1430px;
+}
+
+div#row5a1 {
+    position: absolute;
+    left: 100px;
+    top: 1600px;
+}
+
+div#row5a2 {
+    position: absolute;
+    left: 200px;
+    top: 1600px;
+}
+
+div#row5a3 {
+    position: absolute;
+    left: 300px;
+    top: 1600px;
+}
+
+div#row5a4 {
+    position: absolute;
+    left: 400px;
+    top: 1600px;
+}
+
+div#row5a5 {
+    position: absolute;
+    left: 500px;
+    top: 1600px;
+}
+
+div#row5a6 {
+    position: absolute;
+    left: 600px;
+    top: 1600px;
+}
+
+div#row5a7 {
+    position: absolute;
+    left: 700px;
+    top: 1600px;
+}
+
+div#row5b1 {
+    position: absolute;
+    left: 100px;
+    top: 1685px;
+}
+
+div#row5b2 {
+    position: absolute;
+    left: 200px;
+    top: 1685px;
+}
+
+div#row5b3 {
+    position: absolute;
+    left: 300px;
+    top: 1685px;
+}
+
+div#row5b4 {
+    position: absolute;
+    left: 400px;
+    top: 1685px;
+}
+
+div#row5b5 {
+    position: absolute;
+    left: 500px;
+    top: 1685px;
+}
+
+div#row5b6 {
+    position: absolute;
+    left: 600px;
+    top: 1685px;
+}
+
+div#row5b7 {
+    position: absolute;
+    left: 700px;
+    top: 1685px;
+}
+
+
+
+
+.lowBlocks {
+    height: 75px;
+    width: 95px;
+}
+
+
+
+div#d4 {
+    position: absolute;
+    left: 325px;
+    top: 75px;
+}
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
+
+
+
