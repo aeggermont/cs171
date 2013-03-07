@@ -6,8 +6,18 @@ html, body, div, h1, form, fieldset, input, textarea, li, ul, hr, select {
     outline: 0;
     vertical-align: baseline;
     background: transparent;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 
+body{
+    background: #454545;
+}
+
+#container {
+    width:1200px;
+    position: relative;
+}
 
 div#about {
     background: #fff;
@@ -15,6 +25,26 @@ div#about {
     width: 100px;
 }
 
+
+.nav
+{
+    padding-top:6px;
+    height:23px;
+    padding-right: 13px;
+    margin-top:2px;
+    float:left;
+}
+
+.nav1
+{
+    margin-right: 8px;
+    border-right:#fefffe 1px dotted;
+}
+
+.nav2
+{
+    margin-right:2px;
+}
 
 div#test {
     background: #fff;
@@ -30,12 +60,11 @@ div#test {
 }
 
 div {
-    position:relative;
 
     border: 1px solid  #000;
-
     font-weight: bold;
     text-align: center;
+    background-color: #ffffff;
 }
 
 
@@ -241,6 +270,11 @@ div#row5a7 {
     top: 1600px;
 }
 
+
+
+
+
+
 div#row5b1 {
     position: absolute;
     left: 100px;
@@ -284,6 +318,73 @@ div#row5b7 {
 }
 
 
+div#row2c3 {
+    position: absolute;
+    left: 830px;
+    top: 1120px;
+    height: 260px;
+    width: 240px;
+}
+
+
+
+
+
+
+.lowBlocksRight {
+    height: 65px;
+    width: 245px;
+}
+
+
+
+
+
+
+
+
+div#row5c1 {
+    position: absolute;
+    left: 830px;
+    top: 1431px;
+}
+
+
+div#row5c2 {
+    position: absolute;
+    left: 830px;
+    top: 1498px;
+}
+
+div#row5c3 {
+    position: absolute;
+    left: 830px;
+    top: 1563px;
+}
+
+div#row5c4 {
+    position: absolute;
+    left: 830px;
+    top: 1628px;
+}
+
+div#row5c5 {
+    position: absolute;
+    left: 830px;
+    top: 1695px;
+}
+
+
+
+
+div#row6{
+    position: absolute;
+    left: 100px;
+    top: 1805px;
+    width: 980px;
+    height: 230px;
+}
+
 
 
 .lowBlocks {
@@ -299,11 +400,14 @@ div#d4 {
     top: 75px;
 }
 
+div#footer {
+    position: absolute;
+    left: 100px;
+    top: 2050px;
+}
 
 footer {
     bottom: 0;
-    left: 0;
-    position: fixed;
     right: 0;
 }
 
