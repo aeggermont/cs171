@@ -1,0 +1,228 @@
+html, body, div, form, fieldset, input, textarea, li, ul, hr, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-color: white;
+}
+
+body
+{
+	margin: 20px;
+	padding: 0;
+	background-color: #333;
+	font: normal 85% arial, helvetica, sans-serif;
+	color: #FFF;
+}
+
+.titleStyles{
+	color: #FFF;
+	font: normal 100% arial, helvetica, sans-serif;
+}
+	
+.blockBoxesStyle{
+	color: #333;
+}
+
+.containingRowBlock2
+{
+	width: 1085px;
+	height: 1010px;
+}
+
+div#topmenu{
+	width: 1065px;
+	text-align: right;
+}
+
+div#mainmenu{
+    float: left;
+    height: 335px;
+    width: 140px;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+
+div#row1Block2
+{
+    height: 335px;
+    width: 615px;
+    float: left;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 1px solid #F30;
+
+}
+
+
+div#row1Block3 {
+
+    height: 335px;
+    width: 280px;
+    float: left;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 1px solid #F30;
+
+}
+
+
+
+.floatleftblock1txt
+{
+    float: left;
+    width: 345px;
+    height: 20px;
+    margin: 8px;
+}
+
+.floatleftblock1
+{
+    height: 260px;
+    width: 340px;
+    float: left;
+    margin: 8px;
+    background-color: #ffffff;
+    border: 1px solid #F30;
+}
+
+
+
+.middleSectionCont
+{
+	left: 100px;
+	width: 1085px;
+	hight: 1500px;
+	height: 740px;
+}
+
+.containingBlock34
+{
+	width: 780px;
+	height: 720px;
+	float: left;
+}
+
+
+
+
+.containingRowBlock3
+{
+	width: 325px;
+	height: 430px;
+	margin: 10px;
+	float: left;
+}
+
+
+.floatleftblock2
+{
+    height: 100px;
+    width: 310px;
+    margin: 0px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+
+.containingRowBlock4
+{
+	width: 425px;
+	height: 540px;
+	margin: 0px;
+	float: left;
+}
+
+
+.floatleftblock3 {
+
+    height: 145px;
+    width: 190px;
+    margin: 10px;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+.floatleftblock4 {
+    height: 75px;
+    width: 95px;
+    float: left;
+    margin: 3px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+.floatleftblock5 {
+    height: 75px;
+    width: 95px;
+    float: left;
+    margin: 3px;
+    border: 1px solid #000;
+}
+
+
+.floatleftblock5 {
+    height: 75px;
+    width: 95px;
+    float: left;
+    margin: 3px;
+    border: 1px solid #000;
+}
+
+
+.containingRowBlock5
+{
+	width: 295px;
+	height: 720px;
+	margin: 0px;
+	float: left;
+}
+
+
+.floatleftblock6a {
+	float: left;
+	height: 300px;
+	width: 290px;
+	margin: 1px;
+	border: 2px solid #000;
+	background-color: #FFF;
+}
+
+.floatleftblock6b {
+	float: left;
+	height: 60px;
+	width: 290px;
+	margin: 1px;
+	border: 2px solid #000;
+	background-color: #FFF;
+}
+
+
+
+div#lowblockrow{
+	left: 100px;
+	margin: 0px;
+	;
+	padding: 20px;
+	;
+	width: 1045px;
+	height: 120px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	float: left;
+}
+
+div#footerlogo{
+	width: 50px;
+}
+
+div#footerlinks{
+	background-color: #DEDED7;
+	width: 1085px;
+}
