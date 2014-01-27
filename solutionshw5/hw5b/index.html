@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>(David Chouinard) US vs. China Unemployment</title>
+    <!-- Harvard CS171/CSCI E-64 Spring 2013     
+	 Solution for HW5 Problem 2 
+	 By David Chouinard -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    <script src="graph.js" ></script>
+  </head>
+  <body>
+
+  <!--<div id="wrapper">-->
+
+    <header>
+      <img src="images/logo.png" alt="Harvard SEAS shield" />
+      <h1>Unemployment: US vs. China</h1>
+    </header>
+
+    <div id="description">
+      <p>This line chart compares the unemployment rate between the US and China. Overall, it's interesting to note that the two countries converge towards similar unemployment rates from very different positions.</p>
+
+      <p>The data is from the <a href="http://www.ilo.org/global/lang--en/index.htm">International Labour Organization</a> (ILO). Note that the most recent data available is from 2005 and China only started compiling data in 1985 (while the US began in 1981). In addition, comments were manually added to interesting and relevant datapoints.</p>
+    </div>
+
+    <div id="content">
+      <div id="canvas-outer">
+        <div>
+          <!-- This is used for drawing crosshairs on top of the graph -->
+          <div id="tooltip"></div>
+          <canvas id="crosshairs" width="800" height="500"></canvas>
+          <canvas id="graph" width="800" height="500">
+            Oh! It seems your browser doesn't support the canvas element.
+          </canvas>
+        </div>
+      </div>
+
+      <aside>
+        <h3>Currently selected</h3>
+        <div id="side-tooltip">
+          <div id="side-tooltip-content"></div>
+        </div>
+        <h3>Filter</h3>
+        <div id="filter"></div>
+        <h3>Options</h3>
+        <div id="options">
+          <input id="options-crosshair" type="checkbox" checked> Enable crosshair guides
+        </div>
+      </aside>
+    </div>
+
+
+    <footer>
+      &copy;2013 David Chouinard
+    </footer>
+
+    <!-- Data (textareas are kind of a kludgy hack...) -->
+    <textarea id="csv">
+Unemployment in the US,
+Date,Unemployment rate
+Year,% unemployed
+1981,7.5,Early 1980s recession
+1982,9.5
+1983,9.39999961853027
+1984,7.40000009536743
+1985,7.09999990463257
+1986,6.90000009536743
+1987,6.09999990463257
+1988,5.40000009536743
+1989,5.19999980926514
+1990,5.5,Early 1990s recession
+1991,6.69999980926514
+1992,7.40000009536743
+1993,6.80000019073486
+1994,6
+1995,5.59999990463257
+1996,5.40000009536743
+1997,4.90000009536743
+1998,4.5
+1999,4.19999980926514
+2000,4
+2001,4.69999980926514,Early 2000s recession
+2002,5.80000019073486
+2003,6
+2004,5.5
+2005,5.09999990463257
+    </textarea>
+    <textarea id="JSON">
+      {
+        "title": "Unemployment in China",
+        "x": {"title" : "Date", "units" : "Year" },
+        "y": {"title" : "Unemployment rate", "units" : "% unemployed" },
+        "points": [
+          [1981, null],
+          [1982, null],
+          [1983, null],
+          [1984, null],
+          [1985, 3],
+          [1986, 2.700000048],
+          [1987, 1.700000048],
+          [1988, 1.299999952],
+          [1989, 1.100000024],
+          [1990, 1.299999952],
+          [1991, 1.700000048],
+          [1992, 1.899999976],
+          [1993, 1.899999976],
+          [1994, 1.899999976],
+          [1995, 3.099999905],
+          [1996, 2.700000048],
+          [1997, 2.099999905],
+          [1998, 4.599999905, "Real estate bubble"],
+          [1999, 6.099999905],
+          [2000, 4.800000191],
+          [2001, 5.099999905],
+          [2002, 7.300000191],
+          [2003, 7.900000095],
+          [2004, 6.800000191],
+          [2005, 5.599999905]
+        ]
+      }
+    </textarea>
+  </body>
+</html>

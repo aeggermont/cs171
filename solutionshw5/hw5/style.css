@@ -1,0 +1,26 @@
+
+
+.invisible { display: none;}
+
+.header_bar {
+    background-color: darkslategray;
+    color: lightgray;
+    padding: 1%;
+    border-bottom: 1px solid #c6c6c6;
+    font-family: arial;
+    width: 100%;
+    margin: -1%;
+}
+
+.vis_canvas{
+
+    margin-top: 6%;
+    margin-left: 2%;
+    position: absolute;
+    cursor: crosshair;
+}
+
+.vis_container{
+    position: relative;
+    margin-bottom: 2%;
+}

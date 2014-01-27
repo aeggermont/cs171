@@ -1,0 +1,95 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url('images/cream_dust.png');
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body {
+  padding: 15px;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #555;
+  font-size: 20px;
+  margin: 30px 0 10px;
+}
+
+header {
+  padding: 20px 40px 30px;
+}
+
+header img {
+  float: right;
+  width: 60px;
+}
+
+#description, #tooltip, #side-tooltip-content {
+  padding: 8px 14px;
+  border-radius: 4px;
+  color: #3a87ad;
+  background-color: #d9edf7;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #bce8f1;
+}
+
+#description {
+  margin: 30px 60px;
+}
+#description p {
+  margin: 8px;
+}
+
+textarea {
+  display: none
+}
+
+#content:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#canvas-outer {
+  width: 800px;
+  height: 500px;
+  float: left;
+  margin-right: 15px;
+}
+#canvas-outer > div {
+  position: relative;
+}
+canvas {
+  position: absolute;
+  cursor: crosshair;
+}
+#tooltip {
+  position: absolute;
+  padding: 6px 8px;
+  z-index: 1;
+  display: none;
+}
+
+aside {
+  padding-top: 15px;
+  float: left;
+}
+#side-tooltip {
+  height: 100px;
+}
+#side-tooltip-content {
+  display: none;
+}
+
+#filter > div {
+  padding-bottom: 2px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
